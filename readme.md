@@ -18,7 +18,7 @@ To install the required packages and libraries, run the following command in you
 
 command
 
-pip install -r requirements.txt
+```pip install -r requirements.txt```
 
 This command will install all the necessary dependencies listed in the requirements.txt file, allowing you to run the
 project without any issues.
@@ -29,7 +29,7 @@ To run the application, execute the following command in the src directory
 
 Command
 
-python main.py
+```python main.py```
 
 This will start the application, and you should be able to use it. (or) Directly run the main.py file
 
