@@ -35,7 +35,7 @@ This will start the application, and you should be able to use it. (or) Directly
 
 #### Endpoint Working:
 
-1. User Registration(```http://127.0.0.1:5000/register```)
+1. **User Registration**(```http://127.0.0.1:5000/register```)
 
     - Endpoint for creating a new User.
    
@@ -53,7 +53,7 @@ This will start the application, and you should be able to use it. (or) Directly
 
       Output:"message": "User created successfully."
 
-2. Hackathon Registration(```http://localhost:5000/create-hackathons```)
+2. **Hackathon Registration**(```http://localhost:5000/create-hackathons```)
 
     - Endpoint for creating a New Hackathon(POST)
 
@@ -67,7 +67,7 @@ This will start the application, and you should be able to use it. (or) Directly
    
     - ![img_2.png](documentaionImage/img_2.png)
      
-3. Retrieving Hackathons(```http://localhost:5000/create-hackathons```)
+3. **Retrieving Hackathons**(```http://localhost:5000/create-hackathons```)
 
     - Endpoint for Retrieving Hackathon(GET)
 
@@ -81,7 +81,7 @@ This will start the application, and you should be able to use it. (or) Directly
    
     - ![img_3.png](documentaionImage/img_3.png)
 
-4. User Registering for Hackathons(```http://localhost:5000/register-hackathon```)
+4. **User Registering for Hackathons**(```http://localhost:5000/register-hackathon```)
 
     - Endpoint for  User Registering for Hackathons
 
@@ -95,7 +95,7 @@ This will start the application, and you should be able to use it. (or) Directly
    
     - ![img_4.png](documentaionImage/img_4.png)
 
-4. User Submission for Hackathons(```http://localhost:5000/submit-hackathon```)
+4. **User Submission for Hackathons**(```http://localhost:5000/submit-hackathon```)
 
     - Endpoint for User Submission for Hackathons
 
@@ -109,7 +109,7 @@ This will start the application, and you should be able to use it. (or) Directly
 
      ![img_5.png](documentaionImage/img_5.png)
 
-5. User Submissions for all Hackathons(```http://localhost:5000/my-hackathons/<int:user_id>```)
+5. **User Submissions for all Hackathons**(```http://localhost:5000/my-hackathons/<int:user_id>```)
 
     - Endpoint for retrieving the all Submission of a User
 
@@ -123,8 +123,7 @@ This will start the application, and you should be able to use it. (or) Directly
 
       ![img_6.png](documentaionImage/img_6.png)
 
-
-5. User Submissions for particular Hackathons(```http://localhost:5000/my-submissions/<int:user_id>/<int:hackathon_id>```)
+5. **User Submissions for particular Hackathons**(```http://localhost:5000/my-submissions/<int:user_id>/<int:hackathon_id>```)
 
     - Endpoint for retrieving the particular Submission of a User
 
