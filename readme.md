@@ -137,8 +137,13 @@ This will start the application, and you should be able to use it. (or) Directly
 
       ![img_7.png](documentaionImage/img_7.png)
      
+
+```
+In addition to the code and documentation, I have included a Postman request file named "CheckHacathon.postman_collection.json" in the "postmanJson" directory.
+This file contains a collection of requests that were made using the Postman application, providing a convenient way to test the functionality of the API.
+```
 ### Contact:
 
 Name : Ujit Kumar
 
-Email : ujitkumar1@gmail.com
+Email : ujitkumar1@gmail.com 
