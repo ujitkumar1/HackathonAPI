@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "4fd68ef2-9022-4f78-bebc-b435fbe0f1e1",
+		"name": "CheckHacathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "RegesterUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"ujit1\",\r\n    \"password\":\"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateHackathon",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My Hackathon\",\r\n    \"description\": \"A cool hackathon\",\r\n    \"background_image\": \"https://edison365.com/wp-content/uploads/2022/03/How-do-hackathons-work.png\",\r\n    \"hackathon_image\": \"https://edison365.com/wp-content/uploads/2022/03/How-do-hackathons-work.png\",\r\n    \"submission_type\": \"file\",\r\n    \"start_datetime\": \"2023-04-01T09:00:00Z\",\r\n    \"end_datetime\": \"2023-05-03T17:00:00Z\",\r\n    \"reward_prize\": 1000\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/create-hackathons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"create-hackathons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllHackathons",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UserRegesterHackathon",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ujit1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":1,\r\n    \"hackathon_id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/register-hackathon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"register-hackathon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "HackathonSumbission",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "ujit1",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"hackathon_id\":1,\r\n  \"name\": \"My Submission\",\r\n  \"summary\": \"This is a summary of my submission\",\r\n  \"submission_type\": \"image\",\r\n  \"submission_url\": \"https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FImage&psig=AOvVaw1lYoE9-nHQufUfZymkJW9l&ust=1680544878575000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCLDaptXji_4CFQAAAAAdAAAAABAE\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/submit-hackathon",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"submit-hackathon"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserHackathons",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "UserSumbission",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
