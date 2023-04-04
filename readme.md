@@ -25,7 +25,7 @@ project without any issues.
 
 ### Usage:
 
-To run the application, execute the following command in the src directory
+To run the application, execute the following command in your current working directory:
 
 Command
 
